@@ -95,7 +95,7 @@ function App() {
     React.useEffect(() => {
         api.getFullData()
             .then(([userData, cardsData]) => {
-
+                console.log(cardsData)
                 setCurrentUser(userData)
                
                 setCards(cardsData)
